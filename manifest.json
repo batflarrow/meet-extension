@@ -14,5 +14,7 @@
     "default_popup": "popup.html",
     "default_title": "Push To Talk"
   },
-  "permissions": ["tabs"]
+  "permissions": ["tabs"],
+  "web_accessible_resources": ["muteIcon.png", "unMuteIcon.png"],
+  "background": { "scripts": ["background.js"] }
 }

@@ -1,2 +1,2 @@
-# meet-extension
-## Browser Extension for Google Meet for push to talk
+# Meet-Extension
+## Chrome Extension for Google Meet to add the functionality of Push to Talk

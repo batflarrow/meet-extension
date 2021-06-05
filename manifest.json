@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Meet Extension",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["loading.js"],
+      "matches": ["https://meet.google.com/*"],
+      "run_at": "document_idle",
+      "css": ["style.css"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Push To Talk"
+  },
+  "permissions": ["tabs"]
+}

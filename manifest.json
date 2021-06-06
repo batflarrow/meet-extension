@@ -4,7 +4,7 @@
   "version": "1.0",
   "content_scripts": [
     {
-      "js": ["loading.js"],
+      "js": ["meet.js"],
       "matches": ["https://meet.google.com/*"],
       "run_at": "document_idle",
       "css": ["style.css"]

@@ -24,3 +24,14 @@ chrome.runtime.onMessage.addListener(
     }
 
 );
+console.log(document);
+// chrome.runtime.onConnect.addListener('keydown', () => {
+//     console.log('key pressed');
+// });
+// chrome.run;
+chrome.runtime.getBackgroundPage((window) => {
+    console.log(window.document);
+    window.document.addEventListener('keydown', () => {
+        console.log('key pressed');
+    });
+});

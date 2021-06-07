@@ -84,3 +84,12 @@ const waitForJoining = setInterval(() => {
 }, 1000);
 
 ;
+
+var port = chrome.runtime.connect({ name: "Google Meet" });
+port.onMessage.addListener(function (msg) {
+    if (msg.toggleMic === "Mute Google Meet Mic") {
+        const $micButton = document.querySelectorAll('[role="button"][data-is-muted]')[0];
+        $micButton.click();
+    }
+});
+

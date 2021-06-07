@@ -16,5 +16,14 @@
   },
   "permissions": ["tabs"],
   "web_accessible_resources": ["muteIcon.png", "unMuteIcon.png"],
-  "background": { "scripts": ["background.js"] }
+  "background": { "scripts": ["background.js"] },
+  "commands": {
+    "toggle-mic": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+5"
+      },
+      "description": "Toggle mute in Google Meet even when outside chrome",
+      "global": true
+    }
+  }
 }
